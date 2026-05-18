@@ -1,5 +1,5 @@
-@import '@/app/ui/variables.scss';
+@use '@/app/ui/variables.scss';
 
 .title {
-  color: $primary-color;
+  color: variables.$primary-color;
 }

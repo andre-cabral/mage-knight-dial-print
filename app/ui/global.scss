@@ -1,5 +1,5 @@
-@import '@/app/ui/variables.scss';
+@use '@/app/ui/variables.scss';
 
 .bodyGlobal {
-  font-family: $font-stack;
+  font-family: variables.$font-stack;
 }
