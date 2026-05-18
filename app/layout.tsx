@@ -1,5 +1,6 @@
 
 import type { Metadata } from 'next'
+import '@/app/ui/global.scss';
 
 export const metadata: Metadata = {
   title: 'Next.js',
@@ -13,7 +14,7 @@ export default function RootLayout({
 }): React.ReactNode {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className='bodyGlobal'>{children}</body>
     </html>
   );
 }
