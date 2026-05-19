@@ -1,0 +1,59 @@
+{
+  "Expansions": [
+    {
+      "ExpansionId": 1,
+      "ExpansionName": "Dragons Gate",
+      "ShortName": "dg"
+    },
+    {
+      "ExpansionId": 2,
+      "ExpansionName": "Dungeons",
+      "ShortName": "d"
+    },
+    {
+      "ExpansionId": 3,
+      "ExpansionName": "Lancers",
+      "ShortName": "l"
+    },
+    {
+      "ExpansionId": 4,
+      "ExpansionName": "Minions",
+      "ShortName": "m"
+    },
+    {
+      "ExpansionId": 5,
+      "ExpansionName": "Conquest",
+      "ShortName": "msc"
+    },
+    {
+      "ExpansionId": 6,
+      "ExpansionName": "Pyramid",
+      "ShortName": "p"
+    },
+    {
+      "ExpansionId": 7,
+      "ExpansionName": "Rebellion",
+      "ShortName": "r"
+    },
+    {
+      "ExpansionId": 8,
+      "ExpansionName": "Sinister",
+      "ShortName": "s"
+    },
+    {
+      "ExpansionId": 9,
+      "ExpansionName": "Unlimited",
+      "ShortName": "u"
+    },
+    {
+      "ExpansionId": 10,
+      "ExpansionName": "Uprising",
+      "ShortName": "g"
+    },
+    {
+      "ExpansionId": 11,
+      "ExpansionName": "Whirlwind",
+      "ShortName": "w"
+    }
+  ]
+}
