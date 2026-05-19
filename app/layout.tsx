@@ -1,5 +1,6 @@
 
 import type { Metadata } from 'next'
+import '@/app/ui/reset.scss';
 import '@/app/ui/global.scss';
 
 export const metadata: Metadata = {

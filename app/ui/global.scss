@@ -1,5 +1,385 @@
 @use '@/app/ui/variables.scss';
 
-.bodyGlobal {
-  font-family: variables.$font-stack;
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dial {
+    position: relative;
+    background-image: url(/image/mk-disc-blank.svg);
+    background-size: 160px;
+    width: 160px;
+    height: 160px;
+}
+
+.dial__click {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.dial__click--0 {
+    transform: rotate(0deg);
+}
+.dial__click--1 {
+    transform: rotate(-30deg);
+}
+.dial__click--2 {
+    transform: rotate(-60deg);
+}
+.dial__click--3 {
+    transform: rotate(-90deg);
+}
+.dial__click--4 {
+    transform: rotate(-120deg);
+}
+.dial__click--5 {
+    transform: rotate(-150deg);
+}
+.dial__click--6 {
+    transform: rotate(-180deg);
+}
+.dial__click--7 {
+    transform: rotate(-210deg);
+}
+.dial__click--8 {
+    transform: rotate(-240deg);
+}
+.dial__click--9 {
+    transform: rotate(-270deg);
+}
+.dial__click--10 {
+    transform: rotate(-300deg);
+}
+.dial__click--11 {
+    transform: rotate(-330deg);
+}
+
+.dial__stat {
+    position: absolute;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: black;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    letter-spacing: -1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+}
+.dial__stat--spd {
+    bottom: 41px;
+    left: 76px;
+}
+.dial__stat--atk {
+    bottom: 25px;
+    left: 76px;
+}
+.dial__stat--def {
+    bottom: 9px;
+    left: 76px;
+}
+.dial__stat--dmg {
+    bottom: 10px;
+    left: 91px;
+    transform: rotate(-26deg);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 2px;
+    z-index: 70;
+}
+.dial__stat--dmg.dial__stat--first-value {
+    background-color: transparent;
+}
+.dial__stat--dmg.dial__stat--start-bg {
+    width: 0;
+    height: 0;
+    border-top: 8px solid green;
+    border-left: 8px solid green;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    z-index: 50;
+    padding: 0;
+}
+.dial__stat--dmg.dial__stat--first-ability {
+    z-index: 30;
+}
+.dial__stat--lvl {
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border: 1px limegreen solid;
+    border-radius: 6px;
+    bottom: 18px;
+    left: 88px;
+    transform: rotate(-13deg);
+    font-size: 12px;
+    line-height: 9px;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: normal;
+    z-index: 100;
+    background-color: white;
+}
+.dial__stat--skull {
+    overflow: hidden;
+    color: transparent;
+    background-image: url(/image/skull_stat.png);
+    background-size: 14px;
+}
+.dial__stat--skull.dial__stat--dmg {
+    background-image: none;
+}
+
+.dial__stat--round {
+    border-radius: 7px;
+}
+.dial__stat--black {
+    background-color: black;
+    color: white;
+}
+.dial__stat--blue {
+    background-color: blue;
+    color: white;
+}
+.dial__stat--green {
+    background-color: green;
+    color: white;
+}
+.dial__stat--grey {
+    background-color: grey;
+}
+.dial__stat--orange {
+    background-color: #FF9400;
+}
+.dial__stat--red {
+    background-color: red;
+    color: white;
+}
+.dial__stat--yellow {
+    background-color: yellow;
+}
+
+.dialtop {
+    position: relative;
+    background-image: url(/image/dialtop_clean_no_arc.png);
+    background-size: 160px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 80px;
+}
+
+.dialtop__arc {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 4px white solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    z-index: 50;
+}
+.dialtop__arc--180 {
+    border-left-color: white;
+    transform: rotate(-45deg);
+}
+.dialtop__arc--270 {
+    border-left-color: white;
+    border-right-color: white;
+}
+.dialtop__arc-end {
+    position: absolute;
+    box-sizing: border-box;
+    width: 10px;
+    height: 22px;
+    border-left: 1px solid white;
+}
+.dialtop__arc-end--left {
+    bottom: 14px;
+    left: 26px;
+    transform: rotate(45deg);
+}
+.dialtop__arc--180 .dialtop__arc-end--left {
+    top: 14px;
+    left: 26px;
+    transform: rotate(-45deg);
+}
+.dialtop__arc--270 .dialtop__arc-end--left {
+    top: 14px;
+    left: 26px;
+    transform: rotate(-45deg);
+}
+.dialtop__arc-end--right {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+.dialtop__arc--270 .dialtop__arc-end--right {
+    top: 20px;
+    right: 19px;
+    transform: rotate(45deg);
+}
+
+svg {
+    width: 100%;
+    font-family: Arial;
+    font-size: 40px;
+    letter-spacing: 1px;
+    transform: rotate(31deg);
+}
+path {
+  fill: transparent;
+}
+text {
+  fill: white;
+}
+
+.faction {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    transform: rotate(-143deg);
+}
+.faction--2 {
+    top: 34px;
+    right: 14px;
+    transform: rotate(-133deg);
+    z-index: 10;
+}
+.faction--atlantis-guild {
+    background-image: url(/image/factions/atlantis_guild.png);
+}
+.faction--black-powder-rebels {
+    background-image: url(/image/factions/black_powder_rebels.png);
+}
+.faction--draconum {
+    background-image: url(/image/factions/draconum.png);
+}
+.faction--elemental-league {
+    background-image: url(/image/factions/elemental_league.png);
+}
+.faction--hero {
+    background-image: url(/image/factions/hero.png);
+}
+.faction--knights-immortal {
+    background-image: url(/image/factions/knights_immortal.png);
+}
+.faction--necropolis-sect {
+    background-image: url(/image/factions/necropolis_sect.png);
+}
+.faction--orc-raiders {
+    background-image: url(/image/factions/orc_raiders.png);
+}
+.faction--shyft {
+    background-image: url(/image/factions/shyft.png);
+}
+.faction--solonavi {
+    background-image: url(/image/factions/solonavi.png);
+}
+
+.rank {
+    display: flex;
+    width: 30px;
+    height: 10px;
+    position: absolute;
+    top: 58px;
+    right: -3px;
+    transform: rotate(-104deg);
+}
+
+.rank__star {
+    width: 10px;
+    height: 10px;
+    background-image: url(/image/star_rank.png);
+    background-size: 10px;
+}
+
+.miniature-number {
+    display: flex;
+    position: absolute;
+    bottom: 39px;
+    left: 4px;
+    transform: rotate(58deg);
+    align-items: center;
+}
+.miniature-number__collection {
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    margin-right: 1px;
+}
+.miniature-number__collection--rebellion-alpha {
+    background-image: url(/image/sets/01_a_rebellion_alpha.png);
+}
+.miniature-number__collection--rebellion-beta {
+    background-image: url(/image/sets/01_b_rebellion_beta.png);
+}
+.miniature-number__collection--lancers {
+    background-image: url(/image/sets/02_lancers.png);
+}
+.miniature-number__collection--whirlwind {
+    background-image: url(/image/sets/03_whirlwind.png);
+}
+.miniature-number__collection--dungeons {
+    background-image: url(/image/sets/04_dungeons.png);
+}
+.miniature-number__collection--unlimited {
+    background-image: url(/image/sets/05_unlimited.png);
+}
+.miniature-number__collection--sinister {
+    background-image: url(/image/sets/06_sinister.png);
+}
+.miniature-number__collection--minions {
+    background-image: url(/image/sets/07_minions.png);
+}
+.miniature-number__collection--pyramid {
+    background-image: url(/image/sets/08_pyramid.png);
+}
+.miniature-number__collection--uprising {
+    background-image: url(/image/sets/09_uprising.png);
+}
+.miniature-number__collection--dragons_gate {
+    background-image: url(/image/sets/10_dragons_gate.png);
+}
+.miniature-number__number {
+    font-family: Arial;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.range {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    position: absolute;
+    bottom: 45px;
+    right: 26px;
+    transform: rotate(-40deg);
+}
+
+.range__value {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    width: 15px;
+    margin-right: 2px;
+    text-align: right;
+}
+
+.range__arrow {
+    background-image: url(/image/arrow_target.png);
+    width: 5px;
+    height: 14px;
+    background-size: 5px;
 }
