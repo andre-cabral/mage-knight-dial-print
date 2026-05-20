@@ -1,6 +1,7 @@
 import Header from '@/app/ui/header/header';
 import LikeButton from '@/app/ui/like-button/like-button';
 import Arc from '@/app/ui/dialtop/arc'
+import CurvedText from './ui/dialtop/curved-text';
 import jsonFile from '@/public/json/factions.json'
  
 export default function HomePage() {
@@ -92,12 +93,7 @@ console.log(jsonFile)
 
       <div className="dialtop">
         <Arc arcValue={90} />
-          <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
-              <text width="500">
-              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
-              </text>
-          </svg>
+        <CurvedText name='Utem Crossbowman' points={11} />
           <div className="faction faction--hero"></div>
           <div className="faction faction--2 faction--draconum"></div>
           <div className="rank">
@@ -120,12 +116,7 @@ console.log(jsonFile)
 
       <div className="dialtop">
           <Arc arcValue={180} />
-          <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
-              <text width="500">
-              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
-              </text>
-          </svg>
+          <CurvedText name='Utem Crossbowman' points={11} />
           <div className="faction faction--atlantis-guild"></div>
           <div className="rank">
               <div className="rank__star rank__star--1"></div>
@@ -144,12 +135,7 @@ console.log(jsonFile)
 
       <div className="dialtop">
           <Arc arcValue={270} />
-          <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
-              <text width="500">
-              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
-              </text>
-          </svg>
+          <CurvedText name='Utem Crossbowman' points={11} />
           <div className="faction faction--draconum"></div>
           <div className="rank">
               <div className="rank__star rank__star--1"></div>

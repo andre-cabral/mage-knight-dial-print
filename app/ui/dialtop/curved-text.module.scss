@@ -1,0 +1,15 @@
+@use '@/app/ui/variables.scss';
+
+.svg {
+  width: 100%;
+  font-family: Arial;
+  font-size: 40px;
+  letter-spacing: 1px;
+  transform: rotate(31deg);
+}
+.path {
+  fill: transparent;
+}
+.text {
+  fill: white;
+}
