@@ -1,0 +1,48 @@
+.faction {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  transform: rotate(-143deg);
+}
+.factionTwo {
+  top: 34px;
+  right: 14px;
+  transform: rotate(-133deg);
+  z-index: 10;
+}
+.AtlantisGuild {
+  background-image: url(/image/factions/atlantis_guild.png);
+}
+.BlackPowderRebels {
+  background-image: url(/image/factions/black_powder_rebels.png);
+}
+.faction--Draconum {
+  background-image: url(/image/factions/draconum.png);
+}
+.ElementalLeague {
+  background-image: url(/image/factions/elemental_league.png);
+}
+.Heroes {
+  background-image: url(/image/factions/hero.png);
+}
+.KnightsImmortal {
+  background-image: url(/image/factions/knights_immortal.png);
+}
+.MageSpawn {
+  background-image: none;
+}
+.NecropolisSect {
+  background-image: url(/image/factions/necropolis_sect.png);
+}
+.OrcRaiders {
+  background-image: url(/image/factions/orc_raiders.png);
+}
+.Shyft {
+  background-image: url(/image/factions/shyft.png);
+}
+.Solonavi {
+  background-image: url(/image/factions/solonavi.png);
+}

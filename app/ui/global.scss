@@ -1,5 +1,3 @@
-@use '@/app/ui/variables.scss';
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -171,52 +169,6 @@
     border: 1px solid black;
     box-sizing: border-box;
     border-radius: 80px;
-}
-
-.faction {
-    width: 20px;
-    height: 20px;
-    background-size: 20px;
-    position: absolute;
-    top: 22px;
-    right: 30px;
-    transform: rotate(-143deg);
-}
-.faction--2 {
-    top: 34px;
-    right: 14px;
-    transform: rotate(-133deg);
-    z-index: 10;
-}
-.faction--atlantis-guild {
-    background-image: url(/image/factions/atlantis_guild.png);
-}
-.faction--black-powder-rebels {
-    background-image: url(/image/factions/black_powder_rebels.png);
-}
-.faction--draconum {
-    background-image: url(/image/factions/draconum.png);
-}
-.faction--elemental-league {
-    background-image: url(/image/factions/elemental_league.png);
-}
-.faction--hero {
-    background-image: url(/image/factions/hero.png);
-}
-.faction--knights-immortal {
-    background-image: url(/image/factions/knights_immortal.png);
-}
-.faction--necropolis-sect {
-    background-image: url(/image/factions/necropolis_sect.png);
-}
-.faction--orc-raiders {
-    background-image: url(/image/factions/orc_raiders.png);
-}
-.faction--shyft {
-    background-image: url(/image/factions/shyft.png);
-}
-.faction--solonavi {
-    background-image: url(/image/factions/solonavi.png);
 }
 
 .rank {
