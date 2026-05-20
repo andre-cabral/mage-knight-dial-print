@@ -1,5 +1,6 @@
 import Header from '@/app/ui/header/header';
 import LikeButton from '@/app/ui/like-button/like-button';
+import Arc from '@/app/ui/dialtop/arc'
 import jsonFile from '@/public/json/factions.json'
  
 export default function HomePage() {
@@ -90,10 +91,7 @@ console.log(jsonFile)
       </div>
 
       <div className="dialtop">
-          <div className="dialtop__arc">
-              <div className="dialtop__arc-end dialtop__arc-end--left"></div>
-              <div className="dialtop__arc-end dialtop__arc-end--right"></div>
-          </div>
+        <Arc arcValue={90} />
           <svg viewBox="0 0 500 500">
               <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
@@ -121,10 +119,7 @@ console.log(jsonFile)
       </div>
 
       <div className="dialtop">
-          <div className="dialtop__arc dialtop__arc--180">
-              <div className="dialtop__arc-end dialtop__arc-end--left"></div>
-              <div className="dialtop__arc-end dialtop__arc-end--right"></div>
-          </div>
+          <Arc arcValue={180} />
           <svg viewBox="0 0 500 500">
               <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
@@ -148,10 +143,7 @@ console.log(jsonFile)
       </div>
 
       <div className="dialtop">
-          <div className="dialtop__arc dialtop__arc--270">
-              <div className="dialtop__arc-end dialtop__arc-end--left"></div>
-              <div className="dialtop__arc-end dialtop__arc-end--right"></div>
-          </div>
+          <Arc arcValue={270} />
           <svg viewBox="0 0 500 500">
               <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
