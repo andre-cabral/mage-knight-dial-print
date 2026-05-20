@@ -95,9 +95,9 @@ console.log(jsonFile)
               <div className="dialtop__arc-end dialtop__arc-end--right"></div>
           </div>
           <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" stroke-miterlimit="10"/>
+              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
-              <textPath xlink:href="#curve">Utem Crossbowman 11</textPath>
+              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
               </text>
           </svg>
           <div className="faction faction--hero"></div>
@@ -126,9 +126,9 @@ console.log(jsonFile)
               <div className="dialtop__arc-end dialtop__arc-end--right"></div>
           </div>
           <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" stroke-miterlimit="10"/>
+              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
-              <textPath xlink:href="#curve">Utem Crossbowman 11</textPath>
+              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
               </text>
           </svg>
           <div className="faction faction--atlantis-guild"></div>
@@ -153,9 +153,9 @@ console.log(jsonFile)
               <div className="dialtop__arc-end dialtop__arc-end--right"></div>
           </div>
           <svg viewBox="0 0 500 500">
-              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" stroke-miterlimit="10"/>
+              <path id="curve" d="M250 22.5C124.4 22.5 22.5 124.4 22.5 250S124.4 477.5 250 477.5 477.5 375.6 477.5 250c0-125.1-101-226.7-226-227.5H250" fill="none" stroke="none" strokeMiterlimit="10"/>
               <text width="500">
-              <textPath xlink:href="#curve">Utem Crossbowman 11</textPath>
+              <textPath xlinkHref="#curve">Utem Crossbowman 11</textPath>
               </text>
           </svg>
           <div className="faction faction--draconum"></div>
