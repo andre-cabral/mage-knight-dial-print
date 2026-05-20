@@ -1,14 +1,10 @@
-import styles from './arc.module.scss'
+import styles from './arc.module.scss';
 
 export default function Arc({
-  arcValue
+  arcValue,
 }:{
-  arcValue: number
+  arcValue: number,
 } ): React.ReactNode {
-  console.log(arcValue)
-  console.log(arcValue === 90)
-  console.log(arcValue === 180)
-  console.log(arcValue === 270)
 
   if(arcValue === 90) {
     return (

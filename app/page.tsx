@@ -1,12 +1,8 @@
-import Header from '@/app/ui/header/header';
-import LikeButton from '@/app/ui/like-button/like-button';
-import Arc from '@/app/ui/dialtop/arc'
+import Arc from '@/app/ui/dialtop/arc';
 import CurvedText from './ui/dialtop/curved-text';
-import jsonFile from '@/public/json/factions.json'
  
 export default function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
-console.log(jsonFile)
+
   return (
     <div className="container">
       <div className="dial">

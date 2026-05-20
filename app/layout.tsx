@@ -1,5 +1,5 @@
 
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import '@/app/ui/reset.scss';
 import '@/app/ui/global.scss';
 

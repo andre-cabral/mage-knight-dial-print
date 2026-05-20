@@ -1,11 +1,11 @@
-import styles from './curved-text.module.scss'
+import styles from './curved-text.module.scss';
 
 export default function CurvedText({
   name,
-  points
+  points,
 }:{
   name: string,
-  points: number
+  points: number,
 } ): React.ReactNode {
   return (
     <svg className={styles.svg} viewBox="0 0 500 500">

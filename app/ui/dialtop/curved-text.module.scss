@@ -2,7 +2,7 @@
 
 .svg {
   width: 100%;
-  font-family: Arial;
+  font-family: $font-family;
   font-size: 40px;
   letter-spacing: 1px;
   transform: rotate(31deg);
@@ -11,5 +11,5 @@
   fill: transparent;
 }
 .text {
-  fill: white;
+  fill: $white;
 }
