@@ -22,7 +22,7 @@ export default function Factions({
       {
         factionTwo !== '' &&
         factionTwo !== 'MageSpawn' ?
-          <div className={`${styles.factionTwo} ${styles[`${factionTwo}`]}`}></div> :
+          <div className={`${styles.faction} ${styles.factionTwo} ${styles[`${factionTwo}`]}`}></div> :
           <></>
       }
     </>

@@ -8,3 +8,4 @@ This app uses React and Next.js.
 - Make sure you are using Node 24 or higher.
 - On the project root, use the command "npm install"
 - After the npm install, use "npm run dev" to start the project.
+- To make the project available on the network, put   "allowedDevOrigins: [serverIPHere]" on the next.config.js file

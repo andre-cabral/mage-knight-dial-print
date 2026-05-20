@@ -1,8 +1,8 @@
 import Arc from '@/app/ui/dialtop/arc';
 import CurvedText from './ui/dialtop/curved-text';
+import Factions from './ui/dialtop/factions';
  
 export default function HomePage() {
-
   return (
     <div className="container">
       <div className="dial">
@@ -90,8 +90,7 @@ export default function HomePage() {
       <div className="dialtop">
         <Arc arcValue={90} />
         <CurvedText name='Utem Crossbowman' points={11} />
-          <div className="faction faction--hero"></div>
-          <div className="faction faction--2 faction--draconum"></div>
+        <Factions factions='Heroes, Draconum ' />
           <div className="rank">
               <div className="rank__star rank__star--1"></div>
               <div className="rank__star rank__star--2"></div>
@@ -111,9 +110,9 @@ export default function HomePage() {
       </div>
 
       <div className="dialtop">
-          <Arc arcValue={180} />
-          <CurvedText name='Utem Crossbowman' points={11} />
-          <div className="faction faction--atlantis-guild"></div>
+        <Arc arcValue={180} />
+        <CurvedText name='Utem Crossbowman' points={11} />
+        <Factions factions='Atlantis Guild ' />
           <div className="rank">
               <div className="rank__star rank__star--1"></div>
               <div className="rank__star rank__star--2"></div>
@@ -130,9 +129,9 @@ export default function HomePage() {
       </div>
 
       <div className="dialtop">
-          <Arc arcValue={270} />
-          <CurvedText name='Utem Crossbowman' points={11} />
-          <div className="faction faction--draconum"></div>
+        <Arc arcValue={270} />
+        <CurvedText name='Utem Crossbowman' points={11} />
+        <Factions factions=' Draconum ' />
           <div className="rank">
               <div className="rank__star rank__star--1"></div>
               <div className="rank__star rank__star--2"></div>
