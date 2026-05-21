@@ -11,7 +11,7 @@ export default function Range({
   for (let i=0; i<rangeObject.targets; i++){
     arrows.push(<div className={styles.arrow} key={`range-arrow-${i}`}></div>);
   }
-console.log(rangeObject)
+
   return (
     <div className={styles.range}>
       <p className={styles.value}>{rangeObject.range}</p>
