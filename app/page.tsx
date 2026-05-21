@@ -1,6 +1,7 @@
 import Arc from '@/app/ui/dialtop/arc';
 import CurvedText from './ui/dialtop/curved-text';
 import Factions from './ui/dialtop/factions';
+import Rank from './ui/dialtop/rank';
  
 export default function HomePage() {
   return (
@@ -91,11 +92,7 @@ export default function HomePage() {
         <Arc arcValue={90} />
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions='Heroes, Draconum ' />
-          <div className="rank">
-              <div className="rank__star rank__star--1"></div>
-              <div className="rank__star rank__star--2"></div>
-              <div className="rank__star rank__star--3"></div>
-          </div>
+        <Rank rank='Tough' />
           <div className="miniature-number">
               <div className="miniature-number__collection miniature-number__collection--whirlwind"></div>
               <p className="miniature-number__number">008</p>
@@ -113,11 +110,7 @@ export default function HomePage() {
         <Arc arcValue={180} />
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions='Atlantis Guild ' />
-          <div className="rank">
-              <div className="rank__star rank__star--1"></div>
-              <div className="rank__star rank__star--2"></div>
-              <div className="rank__star rank__star--3"></div>
-          </div>
+        <Rank rank='Standard' />
           <div className="miniature-number">
               <div className="miniature-number__collection miniature-number__collection--minions"></div>
               <p className="miniature-number__number">008</p>
@@ -132,11 +125,7 @@ export default function HomePage() {
         <Arc arcValue={270} />
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions=' Draconum ' />
-          <div className="rank">
-              <div className="rank__star rank__star--1"></div>
-              <div className="rank__star rank__star--2"></div>
-              <div className="rank__star rank__star--3"></div>
-          </div>
+        <Rank rank='Weak' />
           <div className="miniature-number">
               <div className="miniature-number__collection miniature-number__collection--unlimited"></div>
               <p className="miniature-number__number">008</p>

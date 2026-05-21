@@ -171,23 +171,6 @@
     border-radius: 80px;
 }
 
-.rank {
-    display: flex;
-    width: 30px;
-    height: 10px;
-    position: absolute;
-    top: 58px;
-    right: -3px;
-    transform: rotate(-104deg);
-}
-
-.rank__star {
-    width: 10px;
-    height: 10px;
-    background-image: url(/image/star_rank.png);
-    background-size: 10px;
-}
-
 .miniature-number {
     display: flex;
     position: absolute;
