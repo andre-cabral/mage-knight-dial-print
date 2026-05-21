@@ -2,7 +2,7 @@ export function getRangeObjectByString (rangeString: string): {
   range: number,
   targets: number,
 } {
-  const rangeParts = rangeString.split(' ');
+  const rangeParts = rangeString.trim().split(' ');
 
   return {
     range: rangeParts?.[0] ? Number(rangeParts?.[0].trim()) : 0,

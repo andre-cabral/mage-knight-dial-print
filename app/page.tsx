@@ -96,7 +96,7 @@ export default function HomePage() {
         <Factions factions='Heroes, Draconum ' />
         <Rank rank='Tough' />
         <Collection collection="Whirlwind" miniatureNumber="008" />
-        <Range rangeString='10 (2 Targets)' />
+        <Range rangeString=' 10 (2 Targets) ' />
           
       </div>
 
