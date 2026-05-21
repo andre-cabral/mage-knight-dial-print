@@ -3,6 +3,7 @@ import CurvedText from './ui/dialtop/curved-text';
 import Factions from './ui/dialtop/factions';
 import Rank from './ui/dialtop/rank';
 import Collection from './ui/dialtop/collection';
+import Range from './ui/dialtop/range';
  
 export default function HomePage() {
   return (
@@ -95,13 +96,8 @@ export default function HomePage() {
         <Factions factions='Heroes, Draconum ' />
         <Rank rank='Tough' />
         <Collection collection="Whirlwind" miniatureNumber="008" />
-          <div className="range">
-              <p className="range__value">10</p>
-              <div className="range__arrow range__arrow--1"></div>
-              <div className="range__arrow range__arrow--2"></div>
-              <div className="range__arrow range__arrow--3"></div>
-              <div className="range__arrow range__arrow--4"></div>
-          </div>
+        <Range rangeString='10 (2 Targets)' />
+          
       </div>
 
       <div className="dialtop">
@@ -110,10 +106,7 @@ export default function HomePage() {
         <Factions factions='Atlantis Guild ' />
         <Rank rank='Standard' />
         <Collection collection="Minions" miniatureNumber="008" />
-          <div className="range">
-              <p className="range__value">0</p>
-              <div className="range__arrow range__arrow--1"></div>
-          </div>
+        <Range rangeString='10' />
       </div>
 
       <div className="dialtop">
@@ -122,13 +115,7 @@ export default function HomePage() {
         <Factions factions=' Draconum ' />
         <Rank rank='Weak' />
         <Collection collection="Unlimited" miniatureNumber="008" />
-          <div className="range">
-              <p className="range__value">8</p>
-              <div className="range__arrow range__arrow--1"></div>
-              <div className="range__arrow range__arrow--2"></div>
-              <div className="range__arrow range__arrow--3"></div>
-              <div className="range__arrow range__arrow--4"></div>
-          </div>
+        <Range rangeString='0' />
       </div>
 
   </div>

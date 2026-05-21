@@ -1,0 +1,26 @@
+.range {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  position: absolute;
+  bottom: 45px;
+  right: 26px;
+  transform: rotate(-40deg);
+}
+
+.value {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  width: 15px;
+  margin-right: 2px;
+  text-align: right;
+}
+
+.arrow {
+  background-image: url(/image/arrow_target.png);
+  width: 5px;
+  height: 14px;
+  background-size: 5px;
+}
