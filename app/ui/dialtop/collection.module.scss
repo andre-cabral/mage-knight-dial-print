@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  position: absolute;
+  bottom: 39px;
+  left: 4px;
+  transform: rotate(58deg);
+  align-items: center;
+}
+.collection {
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  margin-right: 1px;
+}
+.rebellion {
+  background-image: url(/image/sets/01_a_rebellion_alpha.png);
+}
+.rebellionBeta{
+  background-image: url(/image/sets/01_b_rebellion_beta.png);
+}
+.lancers {
+  background-image: url(/image/sets/02_lancers.png);
+}
+.whirlwind {
+  background-image: url(/image/sets/03_whirlwind.png);
+}
+.dungeons {
+  background-image: url(/image/sets/04_dungeons.png);
+}
+.unlimited {
+  background-image: url(/image/sets/05_unlimited.png);
+}
+.sinister {
+  background-image: url(/image/sets/06_sinister.png);
+}
+.minions {
+  background-image: url(/image/sets/07_minions.png);
+}
+.pyramid {
+  background-image: url(/image/sets/08_pyramid.png);
+}
+.uprising {
+  background-image: url(/image/sets/09_uprising.png);
+}
+.dragonsgate {
+  background-image: url(/image/sets/10_dragons_gate.png);
+}
+.miniatureNumber {
+  font-family: Arial;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: white;
+}
+

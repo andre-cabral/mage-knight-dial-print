@@ -3,56 +3,67 @@
     {
       "ExpansionId": 1,
       "ExpansionName": "Dragons Gate",
+      "CollectionClass":  "dragonsgate",
       "ShortName": "dg"
     },
     {
       "ExpansionId": 2,
       "ExpansionName": "Dungeons",
+      "CollectionClass": "dungeons",
       "ShortName": "d"
     },
     {
       "ExpansionId": 3,
       "ExpansionName": "Lancers",
+      "CollectionClass": "lancers",
       "ShortName": "l"
     },
     {
       "ExpansionId": 4,
       "ExpansionName": "Minions",
+      "CollectionClass": "minions",
       "ShortName": "m"
     },
     {
       "ExpansionId": 5,
       "ExpansionName": "Conquest",
+      "CollectionClass": "conquest",
       "ShortName": "msc"
     },
     {
       "ExpansionId": 6,
       "ExpansionName": "Pyramid",
+      "CollectionClass": "pyramid",
       "ShortName": "p"
     },
     {
       "ExpansionId": 7,
       "ExpansionName": "Rebellion",
+      "CollectionClass": "rebellion",
       "ShortName": "r"
     },
     {
       "ExpansionId": 8,
       "ExpansionName": "Sinister",
+      "CollectionClass": "sinister",
       "ShortName": "s"
     },
     {
       "ExpansionId": 9,
       "ExpansionName": "Unlimited",
+      "CollectionClass": "unlimited",
       "ShortName": "u"
     },
     {
       "ExpansionId": 10,
       "ExpansionName": "Uprising",
+      "CollectionClass": "uprising",
       "ShortName": "g"
     },
     {
       "ExpansionId": 11,
       "ExpansionName": "Whirlwind",
+      "CollectionClass": "whirlwind",
       "ShortName": "w"
     }
   ]

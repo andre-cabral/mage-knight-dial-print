@@ -171,60 +171,6 @@
     border-radius: 80px;
 }
 
-.miniature-number {
-    display: flex;
-    position: absolute;
-    bottom: 39px;
-    left: 4px;
-    transform: rotate(58deg);
-    align-items: center;
-}
-.miniature-number__collection {
-    width: 20px;
-    height: 20px;
-    background-size: 20px;
-    margin-right: 1px;
-}
-.miniature-number__collection--rebellion-alpha {
-    background-image: url(/image/sets/01_a_rebellion_alpha.png);
-}
-.miniature-number__collection--rebellion-beta {
-    background-image: url(/image/sets/01_b_rebellion_beta.png);
-}
-.miniature-number__collection--lancers {
-    background-image: url(/image/sets/02_lancers.png);
-}
-.miniature-number__collection--whirlwind {
-    background-image: url(/image/sets/03_whirlwind.png);
-}
-.miniature-number__collection--dungeons {
-    background-image: url(/image/sets/04_dungeons.png);
-}
-.miniature-number__collection--unlimited {
-    background-image: url(/image/sets/05_unlimited.png);
-}
-.miniature-number__collection--sinister {
-    background-image: url(/image/sets/06_sinister.png);
-}
-.miniature-number__collection--minions {
-    background-image: url(/image/sets/07_minions.png);
-}
-.miniature-number__collection--pyramid {
-    background-image: url(/image/sets/08_pyramid.png);
-}
-.miniature-number__collection--uprising {
-    background-image: url(/image/sets/09_uprising.png);
-}
-.miniature-number__collection--dragons_gate {
-    background-image: url(/image/sets/10_dragons_gate.png);
-}
-.miniature-number__number {
-    font-family: Arial;
-    font-size: 8px;
-    letter-spacing: 1px;
-    color: white;
-}
-
 .range {
     display: flex;
     align-items: center;

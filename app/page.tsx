@@ -2,6 +2,7 @@ import Arc from '@/app/ui/dialtop/arc';
 import CurvedText from './ui/dialtop/curved-text';
 import Factions from './ui/dialtop/factions';
 import Rank from './ui/dialtop/rank';
+import Collection from './ui/dialtop/collection';
  
 export default function HomePage() {
   return (
@@ -93,10 +94,7 @@ export default function HomePage() {
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions='Heroes, Draconum ' />
         <Rank rank='Tough' />
-          <div className="miniature-number">
-              <div className="miniature-number__collection miniature-number__collection--whirlwind"></div>
-              <p className="miniature-number__number">008</p>
-          </div>
+        <Collection collection="Whirlwind" miniatureNumber="008" />
           <div className="range">
               <p className="range__value">10</p>
               <div className="range__arrow range__arrow--1"></div>
@@ -111,10 +109,7 @@ export default function HomePage() {
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions='Atlantis Guild ' />
         <Rank rank='Standard' />
-          <div className="miniature-number">
-              <div className="miniature-number__collection miniature-number__collection--minions"></div>
-              <p className="miniature-number__number">008</p>
-          </div>
+        <Collection collection="Minions" miniatureNumber="008" />
           <div className="range">
               <p className="range__value">0</p>
               <div className="range__arrow range__arrow--1"></div>
@@ -126,10 +121,7 @@ export default function HomePage() {
         <CurvedText name='Utem Crossbowman' points={11} />
         <Factions factions=' Draconum ' />
         <Rank rank='Weak' />
-          <div className="miniature-number">
-              <div className="miniature-number__collection miniature-number__collection--unlimited"></div>
-              <p className="miniature-number__number">008</p>
-          </div>
+        <Collection collection="Unlimited" miniatureNumber="008" />
           <div className="range">
               <p className="range__value">8</p>
               <div className="range__arrow range__arrow--1"></div>
