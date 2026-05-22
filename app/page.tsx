@@ -1,161 +1,21 @@
-import { ClickValues } from './lib/interfaces/ClickValues';
-import Click from './ui/dial/click';
+import { ClickValues } from '@/app/lib/interfaces/ClickValues';
+import Dial from '@/app/ui/dial/dial';
 import Arc from '@/app/ui/dialtop/arc';
-import CurvedText from './ui/dialtop/curved-text';
-import Factions from './ui/dialtop/factions';
-import Rank from './ui/dialtop/rank';
-import Collection from './ui/dialtop/collection';
-import Range from './ui/dialtop/range';
+import CurvedText from '@/app/ui/dialtop/curved-text';
+import Factions from '@/app/ui/dialtop/factions';
+import Rank from '@/app/ui/dialtop/rank';
+import Collection from '@/app/ui/dialtop/collection';
+import Range from '@/app/ui/dialtop/range';
+
+import jsonModels from '@/public/json/mkstats.json';
  
 export default function HomePage() {
-  const click : ClickValues = {
-    ClickNumber: 0,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 106,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click2 : ClickValues = {
-    ClickNumber: 1,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click3 : ClickValues = {
-    ClickNumber: 2,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click4 : ClickValues = {
-    ClickNumber: 3,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 105,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click5 : ClickValues = {
-    ClickNumber: 4,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click6 : ClickValues = {
-    ClickNumber: 5,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click7 : ClickValues = {
-    ClickNumber: 6,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click8 : ClickValues = {
-    ClickNumber: 7,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click9 : ClickValues = {
-    ClickNumber: 8,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click10 : ClickValues = {
-    ClickNumber: 9,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click11 : ClickValues = {
-    ClickNumber: 10,
-    Attack: "10",
-    AttackAbilityId: 119,
-    Damage: "2",
-    DamageAbilityId: 111,
-    Defense: "16",
-    DefenseAbilityId: 96,
-    Speed: "8",
-    SpeedAbilityId: 121
-  };
-  const click12 : ClickValues = {
-    ClickNumber: 11,
-    Attack: "Dead",
-    AttackAbilityId: 93,
-    Damage: "Dead",
-    DamageAbilityId: 93,
-    Defense: "Dead",
-    DefenseAbilityId: 93,
-    Speed: "Dead",
-    SpeedAbilityId: 93
-  };
+  console.log(jsonModels)
+  console.log(jsonModels?.['Models'])
+  console.log(jsonModels?.['Models']?.[0])
   return (
     <div className="container">
-      <div className="dial">
-        <Click clickValues={click} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click2} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click3} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click4} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click5} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click6} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click7} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click8} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click9} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click10} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click11} factionsName='Heroes, Draconum ' />
-        <Click clickValues={click12} factionsName='Heroes, Draconum ' />
-      </div>
+      <Dial modelData={jsonModels?.['Models']?.[0]} />
 
       <div className="dialtop">
         <Arc arcValue={90} />
