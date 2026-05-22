@@ -9,7 +9,7 @@ export default function Dial({
 } ): React.ReactNode {
 
   return (
-    <div className="dial">
+    <div className={styles.dial}>
       {
         modelData?.['Dials']?.[0]?.['Clicks']?.map((item, index) => {
           const clickValueData : ClickValues = {
