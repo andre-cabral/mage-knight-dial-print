@@ -7,9 +7,7 @@ export default function Dial({
 }: {
   modelData: any,
 } ): React.ReactNode {
-console.log('modelData')
-console.log(modelData)
-console.log(modelData?.['Dials']?.[0]?.['Clicks'])
+
   return (
     <div className="dial">
       {

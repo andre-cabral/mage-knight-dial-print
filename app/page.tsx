@@ -10,9 +10,7 @@ import Range from '@/app/ui/dialtop/range';
 import jsonModels from '@/public/json/mkstats.json';
  
 export default function HomePage() {
-  console.log(jsonModels)
-  console.log(jsonModels?.['Models'])
-  console.log(jsonModels?.['Models']?.[0])
+
   return (
     <div className="container">
       <Dial modelData={jsonModels?.['Models']?.[0]} />
