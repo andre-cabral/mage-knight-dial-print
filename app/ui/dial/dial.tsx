@@ -1,14 +1,22 @@
+'use client'
+
+import { use, useContext } from 'react'
 import styles from './dial.module.scss';
 import Click from '@/app/ui/dial/click';
 import { ClickValues } from '@/app/lib/interfaces/ClickValues';
+import { StatsContext } from '@/app/lib/providers/stats-provider';
 
-export default function Dial({
-  modelData,
-}: {
-  modelData: any,
-} ): React.ReactNode {
+export default function Dial(): React.ReactNode {
 
-  return (
+  const statsPromise = useContext(StatsContext);
+  if (!statsPromise) {
+    throw new Error('useContext must be used within a StatsProvider')
+  }
+
+  const data = use(statsPromise);
+  const modelData = data?.['Models']?.[0];
+
+  return (    
     <div className={styles.dial}>
       {
         modelData?.['Dials']?.[0]?.['Clicks']?.map((item, index) => {

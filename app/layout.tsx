@@ -2,6 +2,7 @@
 import type { Metadata } from 'next';
 import '@/app/ui/reset.scss';
 import '@/app/ui/global.scss';
+import { Providers } from './lib/providers/providers';
 
 export const metadata: Metadata = {
   title: 'Mage Knight Dial Printer',
@@ -14,12 +15,12 @@ export default function RootLayout({
   children: React.ReactNode
 }): React.ReactNode {
 
-  
-
   return (
     <html lang="en">
       <body className='bodyGlobal'>
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
