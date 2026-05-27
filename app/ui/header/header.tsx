@@ -1,15 +1,16 @@
+'use client';
 import styles from './header.module.scss';
-import Link from 'next/link';
-import { HeaderItems } from '@/app/lib/interfaces/HeaderItems';
+import Menu from './menu';
+import { menuItemsList } from '@/app/lib/menu/menu';
 
 export default function Header({
   title = 'Mage Knight',
   subtitle = 'Dial Printer',
-  items = [],
+  currentPage = '',
 } : {
-  title: string,
-  subtitle: string,
-  items: Array<HeaderItems>,
+  title?: string,
+  subtitle?: string,
+  currentPage: string,
 }): React.ReactNode {
 
   return(
@@ -18,24 +19,7 @@ export default function Header({
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
       </div>
-      { items.length > 0 &&
-        <ul className={styles.items}>
-          {
-            items.map((item, index) => {
-              return (
-                <li key={`headeritem${index}`} className={styles.item}>
-                   <Link
-                      href={item.link}
-                      className={styles.itemLink}
-                    >
-                      {item.text}
-                    </Link>
-                </li>
-              );
-            })
-          }
-        </ul>
-      }
+      <Menu currentPage={currentPage} items={menuItemsList} />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export interface HeaderItems {
+export interface MenuItems {
   "text": string,
   "link": string,
 };
