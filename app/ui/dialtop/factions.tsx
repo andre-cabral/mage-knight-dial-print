@@ -1,5 +1,3 @@
-import { use, useContext } from 'react'
-import { FactionsContext } from '@/app/lib/providers/factions-provider';
 import styles from './factions.module.scss';
 import { getFactionObjectByFullName } from '@/app/lib/dialtop/factions';
 
